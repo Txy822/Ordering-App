@@ -1,4 +1,4 @@
-package com.kapps.ordersyt.order_feature.presentation.components
+package com.tes.apps.development.orderingapp.order_feature.presentation.components
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.layout.*
@@ -13,9 +13,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.kapps.ordersyt.order_feature.presentation.state.ProductListItem
-import com.kapps.ordersyt.ui.theme.white
 import com.tes.apps.development.orderingapp.order_feature.presentation.state.ProductListItem
+import com.tes.apps.development.orderingapp.ui.theme.white
 
 @Composable
 fun ProductUiListItem(

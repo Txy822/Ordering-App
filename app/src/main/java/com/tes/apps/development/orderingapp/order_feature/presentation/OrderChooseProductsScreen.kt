@@ -18,7 +18,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import com.kapps.ordersyt.order_feature.presentation.components.ProductUiListItem
+import com.tes.apps.development.orderingapp.order_feature.presentation.components.ProductUiListItem
 import com.tes.apps.development.orderingapp.core.presentation.ScreenRoutes
 import com.tes.apps.development.orderingapp.order_feature.presentation.components.CheckoutDialog
 import com.tes.apps.development.orderingapp.ui.theme.gray

@@ -3,10 +3,10 @@ package com.tes.apps.development.orderingapp.order_feature.presentation
 import androidx.compose.runtime.*
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.tes.apps.development.orderingapp.core.domain.model.Product
 import com.tes.apps.development.orderingapp.order_feature.domain.use_case.ConfirmOrderUseCase
 import com.tes.apps.development.orderingapp.order_feature.domain.use_case.FilterListByNameUseCase
 import com.tes.apps.development.orderingapp.order_feature.domain.use_case.SortListByNameUseCase
-import com.tes.apps.development.orderingapp.core.domain.model.Product
 import com.tes.apps.development.orderingapp.order_feature.domain.repository.OrderRepository
 import com.tes.apps.development.orderingapp.order_feature.presentation.mapper.toBoughtProduct
 import com.tes.apps.development.orderingapp.order_feature.presentation.mapper.toProductListItem

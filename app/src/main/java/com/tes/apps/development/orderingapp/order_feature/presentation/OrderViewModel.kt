@@ -5,6 +5,8 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.tes.apps.development.orderingapp.core.util.DummyData
+import com.tes.apps.development.orderingapp.deliverer_feature.domain.repository.DelivererRepository
 import com.tes.apps.development.orderingapp.order_feature.domain.model.Order
 import com.tes.apps.development.orderingapp.order_feature.domain.repository.OrderRepository
 import com.tes.apps.development.orderingapp.order_feature.presentation.mapper.toOrderDetailListItem
@@ -16,10 +18,12 @@ import kotlinx.coroutines.launch
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import javax.inject.Inject
+import javax.xml.datatype.Duration
 
 @HiltViewModel
 class OrderViewModel @Inject constructor(
-    private val orderRepository: OrderRepository
+    private val orderRepository: OrderRepository,
+    //private val delivererRepository: DelivererRepository
 ): ViewModel(){
 
     private lateinit var orders:List<Order>
@@ -37,6 +41,7 @@ class OrderViewModel @Inject constructor(
         viewModelScope.launch {
             orders=orderRepository.getOrders()
             setupOrderList()
+           // delivererRepository.insertDeliverers(DummyData.deliverers)
         }
     }
 

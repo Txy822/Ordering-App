@@ -9,9 +9,11 @@ import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.tooling.preview.Preview
 import com.tes.apps.development.orderingapp.core.presentation.Navigation
 import com.tes.apps.development.orderingapp.ui.theme.OrderingAppTheme
+import com.tes.apps.development.orderingapp.ui.theme.orange
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -19,6 +21,8 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
+            window.statusBarColor = orange.toArgb()
+            window.navigationBarColor = orange.toArgb()
             OrderingAppTheme {
                 Navigation()
             }
