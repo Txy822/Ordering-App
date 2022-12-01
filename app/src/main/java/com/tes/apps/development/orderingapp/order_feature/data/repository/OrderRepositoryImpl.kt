@@ -7,8 +7,8 @@ import com.tes.apps.development.orderingapp.core.data.local.ProductDao
 import com.tes.apps.development.orderingapp.core.data.local.entities.OrderProductEntity
 import com.tes.apps.development.orderingapp.core.data.mapper.toDeliver
 import com.tes.apps.development.orderingapp.core.data.mapper.toProduct
-import com.tes.apps.development.orderingapp.core.domain.Deliverer
-import com.tes.apps.development.orderingapp.core.domain.Product
+import com.tes.apps.development.orderingapp.core.domain.model.Deliverer
+import com.tes.apps.development.orderingapp.core.domain.model.Product
 import com.tes.apps.development.orderingapp.order_feature.data.mapper.toOrder
 import com.tes.apps.development.orderingapp.order_feature.data.mapper.toOrderEntity
 import com.tes.apps.development.orderingapp.order_feature.domain.model.Order

@@ -1,6 +1,6 @@
 package com.tes.apps.development.orderingapp.order_feature.presentation.mapper
 
-import com.tes.apps.development.orderingapp.core.domain.Product
+import com.tes.apps.development.orderingapp.core.domain.model.Product
 import com.tes.apps.development.orderingapp.order_feature.domain.model.BoughtProduct
 import com.tes.apps.development.orderingapp.order_feature.presentation.state.ProductListItem
 

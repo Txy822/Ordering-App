@@ -1,7 +1,7 @@
 package com.tes.apps.development.orderingapp.core.util
 
-import com.tes.apps.development.orderingapp.core.domain.Deliverer
-import com.tes.apps.development.orderingapp.core.domain.Product
+import com.tes.apps.development.orderingapp.core.domain.model.Deliverer
+import com.tes.apps.development.orderingapp.core.domain.model.Product
 
 object DummyData {
 
